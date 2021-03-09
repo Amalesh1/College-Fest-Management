@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/register.css">
+</head>
+<body>
+  
+    <section class="register">
+        <div class="content">
+            <header class="anim">
+                Registration Form
+            </header>
+            <p>To Participate, Please Fill The Below Form Correctly. Please Write Only One Event Name Once</p>
+        </div>
+        <div class="container">
+            <div class="contactform">
+                <form action="/register" method="POST">
+                {% csrf_token %}
+                    <h2>Participant's Details</h2>
+                    <div class="inputbox">
+                        <label for="name" style="color: green">Full Name</label>
+                        <br>
+                        <input type="text" name="name" id="name" required>
+                        
+                    </div>
+                    <div class="inputbox">
+                        <label for="email" style="color: green">Email</label><br>
+                        <input type="email" name="email" id="email" required>
+                        
+                    </div>
+                    <div class="inputbox">
+                    <label for="phone" style="color: green">Phone No.</label><br>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    <div class="inputbox">
+                    <label for="event" style="color: green">Event</label><br>
+                        <input type="text" name="event" id="event" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>Developer: Amalesh Adhikary (March-2021)</p>
+        </footer>
+    </section>
+    
+</body>
+</html>

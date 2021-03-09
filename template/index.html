@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croeso Cultural Fest</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../static/images/fest1.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid lightgreen;
+
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer{
+    margin-top: 450px;
+    margin-left: 30%;
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color: orange;
+    margin-right: 15px;
+    border: 1px solid orange;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-te{
+    background-color: transparent;
+    color: orangered;
+    border: 1px solid orangered;
+}
+.btn-te:hover{
+    background-color: lightcoral;
+}
+.anim{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: red}
+    25%{color: darkgreen;}
+    50%{color: orangered;}
+    100%{color: cyan;}
+}
+.phone{
+    display: none;
+}
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .footer{
+        width: 500px;
+        margin-top: 1000px;
+        font-size: 130%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+    .footer{
+        width: 400px;
+        margin-top: 800px;
+        font-size: 100%;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    
+    .phone{ 
+        display: block;
+        float: right;
+        color: white;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+    .footer{
+        width: 310px;
+        margin-top: 700px;
+        font-size: 90%;
+    }
+
+}
+@media only screen and (max-width: 540px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+
+    h1{
+        margin-top: 10px;
+        font-size: 100%;
+    }
+    .footer{
+        width: 200px;
+        margin-top: 460px;
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+
+    h1{
+        margin-top: 10px;
+        font-size: 100%;
+    }
+    .footer{
+        width: 200px;
+        margin-top: 450px;
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 360px){
+    .btn-full{
+        margin-bottom: 15px;
+    }
+
+    h1{
+        margin-top: 8px;
+        font-size: 80%;
+    }
+    .footer{
+        width: 200px;
+        margin-top: 440px;
+        font-size: 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="../static/images/croeso.png" class="logo" alt="logo">
+
+                <ul class="main-nav" id="check">
+                    <li><a href="index">HOME</a></li>
+                    <li><a href="events">EVENTS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="register">Register</a></li>
+                </ul>
+                <a href="#" class="phone"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+        <h1>Welcome to <span class="anim">Croeso</span>.<br>
+         Annual Cultural Fest 2K21 (15-18 April)</h1>
+         <a href="events#div2" class="btn btn-full" id="cult">Cultural Events</a>
+         <a href="events#div1" class="btn btn-te" id="tech">Technical Events</a>
+         
+        </div>
+        <div class="footer"><p style="color: aqua;">Developer: Amalesh Adhikary (March-2021)</p></div>
+        
+        
+    </header>
+        
+    
+    <script>
+        function slideshow(){
+            var x = document.getElementById('check');
+            if(x.style.display === "none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }  
+    </script>   
+</body>
+</html>

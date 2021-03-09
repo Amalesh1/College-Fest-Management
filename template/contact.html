@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+{% block body %}
+     <section class="contact">
+       <div class="content">
+            <header class="anim">Contact Us</header>
+            <p>You can contact our organizers through below provided form.
+            Kindly fill the form correctly so that we can get you easily.
+            Thank You. 
+            </p>
+       </div>
+       <div class="container">
+           <div class="contactInfo">
+               <div class="box">
+               <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+               <div class="text">
+                   <h3>Address</h3>
+                   <p>ABC College XYZ Road, <br>West Bengal, India<br>123456</p>
+               </div>
+           </div>
+           <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">
+                <h3>Phone</h3>
+                <p>+91-1234567890 / +91-0987654321</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <div class="text">
+                <h3>Email</h3>
+                <p>croeso2021@gmail.com</p>
+            </div>
+        </div>
+    </div>
+        <div class="contactform">
+        
+            <form action="/contact" method="POST">
+            {% csrf_token %}
+                <h2>Send Message</h2>
+                <div class="inputbox">
+                <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name">
+                </div>
+                <div class="inputbox">
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="inputbox">
+                <label for="desc">Write your message</label>
+                    <textarea name="desc" id="desc"></textarea>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+       
+       </div>
+       <footer>
+        <p>Developer: Amalesh Adhikary (March-2021)</p>
+    </footer>
+
+    </section>
+{% endblock body %}
+
+
+    
+
+
+</html>

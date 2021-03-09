@@ -1,0 +1,279 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Events{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightslategray;
+}
+.Events .tech-events{
+    background-color: gray;
+    max-width: 800px;
+    text-align: center;
+}
+.Events .tech-events h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tech-events .code .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+.tech-events .cad .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+.tech-events .workshop .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+.tech-events .tech-quiz .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+
+.tech-events .game-dev .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+
+.tech-events .game-dev .btn a{
+    text-decoration: none;
+}
+.tech-events .robotics .img img{
+    width: 350px;
+    padding: 10px;
+    height: 300px;
+}
+.tech-events ul{
+    padding: 20px;
+}
+.tech-events ul li{
+    padding: 30px;
+    list-style: none;
+}
+.tech-events .code{
+    background-color: lightblue;
+}
+.tech-events .code .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .code .btn a{
+    text-decoration: none;
+}
+.tech-events .cad{
+    background-color: lightblue;
+}
+.tech-events .cad .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .cad .btn a{
+    text-decoration: none;
+}
+.tech-events .workshop{
+    background-color: lightblue;
+}
+.tech-events .workshop .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .workshop .btn a{
+    text-decoration: none;
+}
+.tech-events .game-dev{
+    background-color: lightblue;
+}
+.tech-events .game-dev .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .game-dev .btn a{
+    text-decoration: none;
+}
+.tech-events .tech-quiz{
+    background-color: lightblue;
+}
+.tech-events .tech-quiz .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .tech-quiz .btn a{
+    text-decoration: none;
+}
+.tech-events .robotics{
+    background-color: lightblue;
+}
+.tech-events .robotics .btn {
+    padding: 6px;
+    text-align: center;
+    background-color: red;
+    margin-top: 6px;
+}
+.tech-events .robotics .btn a{
+    text-decoration: none;
+}
+.tech-events ul li h3{
+    background-color: aqua;
+}
+.Events .cult-events{
+    max-width: 800px;
+    text-align: center;
+}
+.Events .cult-events ul li{
+    list-style: none;
+}
+.cult-events ul li{
+    padding: 20px;
+}
+.Events .cult-events{
+    margin-top: 30px;
+    max-width: 800px;
+    text-align: center;
+    background-color: lightslategrey;
+}
+.Events .cult-events .dance .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;    
+}
+.Events .cult-events .dance{
+    background-color: lightsalmon;
+}
+.Events .cult-events .dance .btn1{
+    background-color: aqua;
+    padding: 6px;
+    text-align: center;
+    margin-top: 6px;
+}
+.Events .cult-events .dance .btn1 a{
+    text-decoration: none;
+}
+.Events .cult-events .dance p{
+    color: darkviolet;
+}
+.Events .cult-events .drama{
+    background-color: lightseagreen;
+}
+.Events .cult-events .drama .img img{
+    width: 350px;
+    padding: 10px;
+    height: auto;
+}
+.Events .cult-events .drama .btn1{
+    background-color: aqua;
+    padding: 6px;
+    text-align: center;
+    margin-top: 6px;
+}
+.Events .cult-events .drama .btn1 a{
+    text-decoration: none;
+}
+.Events .cult-events .drama p{
+    color: orange;
+}
+.cult-events .photograph .img img{
+    width: 350px;
+    padding: 10px;
+}
+.Events .cult-events .photograph .btn1{
+    background-color: aqua;
+    padding: 6px;
+    text-align: center;
+    margin-top: 6px;
+}
+.Events .cult-events .photograph .btn1 a{
+    text-decoration: none;
+}
+.Events .cult-events .photograph p{
+    color: red;
+}
+.Events .cult-events .photograph{
+    background-color: greenyellow;
+}
+.Events .cult-events .painting .img img{
+    width: 350px;
+    padding: 10px;
+}
+.Events .cult-events .painting .btn1{
+    background-color: aqua;
+    padding: 6px;
+    text-align: center;
+    margin-top: 6px;
+}
+.Events .cult-events .painting .btn1 a{
+    text-decoration: none;
+}
+.Events .cult-events .painting p{
+    color: blue;
+}
+.Events .cult-events ul li h3{
+    background-color: brown;
+}
+.Events .cult-events{
+    background-color: gray;
+    max-width: 800px;
+    text-align: center;
+}
+.anim{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: blue}
+    25%{color: darkgreen;}
+    50%{color: magenta;}
+    100%{color: orangered;}
+}
+.anim1{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: red}
+    25%{color: darkgreen;}
+    50%{color: blue;}
+    100%{color: orangered;}
+}
+@media (max-width: 991px){
+    .Events{
+        padding: 20px;
+        background-size: cover;
+    }
+    .Events .tech-events{
+        max-width: fit-content;
+        flex-direction: column;
+    }
+    .Events .cult-events{
+        max-width: fit-content;
+        flex-direction: column;
+    }
+}
+.footer{
+    margin-top: 20px;
+}
+.footer p{
+    background-color: aqua;
+}
